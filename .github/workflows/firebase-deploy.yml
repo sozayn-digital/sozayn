@@ -32,3 +32,7 @@ jobs:
         channelId: live
       env:
         FIREBASE_CLI_PREVIEWS: hostingchannels
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: sozayn-05222025
+        FIREBASE_CLI_PREVIEWS: hostingchannels
