@@ -5,7 +5,7 @@
     "my-app/backend"
   ],
   "scripts": {
-    "build": "cd my-app/web && next build && next export -o public",
+    "build": "cd my-app/frontend && next build && next export -o public",
     "dev": "cd my-app/web && next dev"
   },
   "dependencies": {
