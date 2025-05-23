@@ -9,6 +9,7 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   reactStrictMode: true,
+  telemetry: false,
   images: {
     unoptimized: true
   }

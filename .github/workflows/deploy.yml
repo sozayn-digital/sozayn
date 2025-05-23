@@ -15,10 +15,26 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          
+
+      - name: Verify Dependency Consistency
+        run: |
+          npm install
+          git diff --exit-code package-lock.json || exit 1
+
       - run: npm ci
-      
-      - run: npm run build
+
+      - name: Cache Next.js build
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            node_modules
+            .next/cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: NEXT_TELEMETRY_DISABLED=1 npm run build
 
       - name: Set up Java
         uses: actions/setup-java@v3
