@@ -1,0 +1,33 @@
+:root {
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 210 20% 98%;
+  --secondary-foreground: 210 100% 50%;
+  
+  --background: 0 0% 100%;
+  --foreground: 210 10% 10%;
+  
+  --muted: 210 15% 95%;
+  --muted-foreground: 210 5% 45%;
+  
+  --border: 210 20% 85%;
+  --ring: 210 100% 50%;
+}
+
+.dark {
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 210 30% 15%;
+  --secondary-foreground: 210 100% 50%;
+  
+  --background: 210 10% 10%;
+  --foreground: 210 20% 95%;
+  
+  --muted: 210 15% 25%;
+  --muted-foreground: 210 5% 75%;
+  
+  --border: 210 20% 35%;
+  --ring: 210 100% 50%;
+}

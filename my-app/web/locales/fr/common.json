@@ -1,0 +1,7 @@
+{
+  "dashboard": {
+    "title": "Tableau de gestion de restaurant",
+    "orders": "Commandes",
+    "analytics": "Analytique"
+  }
+}
